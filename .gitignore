@@ -1,0 +1,39 @@
+# 本机采集产物 —— 绝不入库
+/data.json
+/data.js
+/out/
+*.log
+
+# 会话解析缓存（含真实路径与标题）
+.session-cache.json
+out/.session-cache.json
+
+# 内置运行时（90MB，发布时用 setup 脚本获取）
+/bin/
+
+# 依赖与临时
+node_modules/
+tmp/
+*.tmp
+*.bak
+
+# 外部 Agent 记录（用户私有）
+extra-agents/*.json
+!extra-agents/README.txt
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 凭据（任何情况下都不得提交）
+.credentials*
+*_token*
+*_secret*
+.env
+.env.*
+
+# 发布临时目录
+/_gh-publish/
